@@ -8,14 +8,16 @@ While using MuTect for my exome sequencing analysis I ran into this issue of fin
 I was able to download the file from Sanger's website : http://cancer.sanger.ac.uk/files/cosmic/current_release/VCF/CosmicCodingMuts.vcf.gz
 However the file didn't have 'chr' before each chromosome number which was required by the hg19 format.
 
-Based on searches on various forums I was able to put together two simple statements to produce a cosmic vcf compatible with hg19 and MuTect
+Based on searches on various forums I was able to put together two simple statements to produce a cosmic vcf compatible with hg19 and MuTect.
 
-##Requirements:
+Please feel free to use. I wanted to put this together so that others who might be struggling with this issue may also benefit from this.
+
+###Requirements:
 
 1. Linux commandline
 2. VCFtools (http://sourceforge.net/projects/vcftools/files/)
 
-##Code:
+###Code:
 
 First step is to add chr to non-chr contigs containing vcf
 ```
